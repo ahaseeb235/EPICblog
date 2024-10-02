@@ -31,25 +31,20 @@ def login():
 
     form = LoginForm()
     if form.validate_on_submit():
-        # Grab the user from our User Models table
+   
         user = User.query.filter_by(email=form.email.data).first()
 
-        # Check that the user was supplied and the password is right
-        # The verify_password method comes from the User object
-        # https://stackoverflow.com/questions/2209755/python-operation-vs-is-not
 
         if user.check_password(form.password.data) and user is not None:
-            #Log in the user
+         
 
             login_user(user)
             flash('Logged in successfully.')
 
-            # If a user was trying to visit a page that requires a login
-            # flask saves that URL as 'next'.
+            # to give link for last visited link
             next = request.args.get('next')
 
-            # So let's now check if that next exists, otherwise we'll go to
-            # the welcome page.
+            # check if user exists
             if next == None or not next[0]=='/':
                 next = url_for('core.index')
 

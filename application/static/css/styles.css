@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.nav a {
+    color: navy !important;
+
+}
+
+.nav {
+    background-color: pink !important;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.logo {
+    color: rgb(8, 6, 6);
+    font-size: 2.5rem;
+    padding: 20px 45%;
+    font-weight: bold;
+    align-items: center;
+}
+
+i {
+    color: blueviolet;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    font-size: 1.5rem;
+    padding: 7px 13px;
+    text-transform: capitalize;
+
+}
