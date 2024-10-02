@@ -1,0 +1,8 @@
+__pycache__/ 
+blog_posts/__pycache__/
+core/__pycache__/
+error_pages/__pycache__/
+users/__pycache__/
+
+.env
+
